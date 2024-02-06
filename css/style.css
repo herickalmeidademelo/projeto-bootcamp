@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+    :root {
+        --azul-dnc: #0C70F2;
+        --prto-dnc: #303030;
+        --cinza: #C9C9C9;
+
+        --fonte-padrao: 'Inter';
+    }
+
+
+
         body {
             margin: 0px;
             padding: 0px;
+            background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+            background-repeat: no-repeat;
         }
         #principal {
             display: flex;
@@ -11,8 +24,8 @@
             align-items: center;
             width: 100%;
             height: 100px;
-            background-color: #303030;
-            font-family: Inter;
+            background-color: var(--prto-dnc);
+            font-family: var(--fonte-padrao);
             letter-spacing: 0em;
             border-bottom: 1px solid #BABABA;
 
@@ -25,7 +38,7 @@
             color: #FFFFFF;
         }
         #principal button{
-            font-family: Inter;
+            font-family: var(--fonte-padrao);
             font-size: 15px;
             font-weight: bold;
             line-height: 24px;
@@ -34,7 +47,7 @@
             color: #FFFFFF;
             margin-right: 5%;
             box-shadow: 3px 2px 4px 0px #0C70F240;
-            background-color: #0C70F2;
+            background-color: var(--azul-dnc);
             cursor: pointer;
             border: none;
             width: 80px;
@@ -42,7 +55,7 @@
 
         }
         #principal a:hover {
-            color: #CCCCCC;
+            color: var(--cinza);
         }
         #menu {
             margin-left: 55px;
@@ -51,3 +64,37 @@
             width: 45%;
             justify-content: space-around;
         }
+
+    /* Seção principal do site */
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    header {
+        color: #FFFFFF;
+        font-family: var(--fonte-padrao);
+    }
+    header h1{
+        font-family: var(--fonte-padrao);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 80px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    header h2 {
+        text-align: center;
+        font-family: var(--fonte-padrao);
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 100px;
+    }
+    header .invert {
+        background-color: #000000;
+        font-weight: bold;
+        padding: 5px;
+    }
